@@ -4,26 +4,32 @@
 &lt;h2&gt;准备工作&lt;/h2&gt;
 &lt;p&gt;为了发布在 GitHub Page 上，需要先新建一个远程仓库 &lt;code&gt;username.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;将该仓库克隆到本地&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;$git clone https://github.com/{username}/{username}.github.io.git blog&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/&lt;span class="o"&gt;{&lt;/span&gt;username&lt;span class="o"&gt;}&lt;/span&gt;/&lt;span class="o"&gt;{&lt;/span&gt;username&lt;span class="o"&gt;}&lt;/span&gt;.github.io.git blog
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;由于 Pelican 默认发布 master 分支下的内容，所以，我们将 pelican 项目放到其他分支中。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;$git checkout -b source&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git checkout -b &lt;span class="nb"&gt;source&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;安装&lt;/h2&gt;
 &lt;p&gt;新建 python 虚拟环境&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; blog
 
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;
+$ python -m venv .venv
 
-&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+$ &lt;span class="nb"&gt;source&lt;/span&gt; .venv/bin/activate
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;安装必要的 python 包。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$python -m pip install pelican markdown ghp-import&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ python -m pip install pelican markdown ghp-import
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;新建 pelican 项目&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$pelican-quickstart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
 
 

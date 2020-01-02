@@ -67,26 +67,32 @@
 <h2>准备工作</h2>
 <p>为了发布在 GitHub Page 上，需要先新建一个远程仓库 <code>username.github.io</code></p>
 <p>将该仓库克隆到本地</p>
-<p><code>$git clone https://github.com/{username}/{username}.github.io.git blog</code></p>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/<span class="o">{</span>username<span class="o">}</span>/<span class="o">{</span>username<span class="o">}</span>.github.io.git blog
+</pre></div>
+
+
 <p>由于 Pelican 默认发布 master 分支下的内容，所以，我们将 pelican 项目放到其他分支中。</p>
-<p><code>$git checkout -b source</code></p>
+<div class="highlight"><pre><span></span>$ git checkout -b <span class="nb">source</span>
+</pre></div>
+
+
 <h2>安装</h2>
 <p>新建 python 虚拟环境</p>
-<div class="highlight"><pre><span></span><span class="err">$</span><span class="n">cd</span> <span class="n">blog</span>
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> blog
 
-<span class="err">$</span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+$ python -m venv .venv
 
-<span class="err">$</span><span class="k">source</span> <span class="p">.</span><span class="n">venv</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">activate</span>
+$ <span class="nb">source</span> .venv/bin/activate
 </pre></div>
 
 
 <p>安装必要的 python 包。</p>
-<div class="highlight"><pre><span></span><span class="err">$python -m pip install pelican markdown ghp-import</span>
+<div class="highlight"><pre><span></span>$ python -m pip install pelican markdown ghp-import
 </pre></div>
 
 
 <p>新建 pelican 项目</p>
-<div class="highlight"><pre><span></span><span class="err">$pelican-quickstart</span>
+<div class="highlight"><pre><span></span>$ pelican-quickstart
 </pre></div>
 
 
