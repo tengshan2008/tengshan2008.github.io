@@ -64,9 +64,33 @@
     <div class="entry-content">
         <h1>Pelican</h1>
 <p>Pelican 是一种静态博客生成器。</p>
+<h2>准备工作</h2>
+<p>为了发布在 GitHub Page 上，需要先新建一个远程仓库 <code>username.github.io</code></p>
+<p>将该仓库克隆到本地</p>
+<p><code>$git clone https://github.com/{username}/{username}.github.io.git blog</code></p>
+<p>由于 Pelican 默认发布 master 分支下的内容，所以，我们将 pelican 项目放到其他分支中。</p>
+<p><code>$git checkout -b source</code></p>
 <h2>安装</h2>
 <p>新建 python 虚拟环境</p>
-<p><code>python -m venv .venv</code></p>
+<div class="highlight"><pre><span></span><span class="err">$</span><span class="n">cd</span> <span class="n">blog</span>
+
+<span class="err">$</span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+
+<span class="err">$</span><span class="k">source</span> <span class="p">.</span><span class="n">venv</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+
+
+<p>安装必要的 python 包。</p>
+<div class="highlight"><pre><span></span><span class="err">$python -m pip install pelican markdown ghp-import</span>
+</pre></div>
+
+
+<p>新建 pelican 项目</p>
+<div class="highlight"><pre><span></span><span class="err">$pelican-quickstart</span>
+</pre></div>
+
+
+<p>填写必要信息</p>
 <h2>配置</h2>
     </div>
 

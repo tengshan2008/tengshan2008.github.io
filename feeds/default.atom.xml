@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Personal Blog - Default</title><link href="https://tengshan2008.github.io/" rel="alternate"></link><link href="https://tengshan2008.github.io/feeds/default.atom.xml" rel="self"></link><id>https://tengshan2008.github.io/</id><updated>2019-01-02T10:55:00+08:00</updated><entry><title>安装及配置 Pelican 博客</title><link href="https://tengshan2008.github.io/an-zhuang-ji-pei-zhi-pelican-bo-ke.html" rel="alternate"></link><published>2019-01-02T10:55:00+08:00</published><updated>2019-01-02T10:55:00+08:00</updated><author><name>Master</name></author><id>tag:tengshan2008.github.io,2019-01-02:/an-zhuang-ji-pei-zhi-pelican-bo-ke.html</id><summary type="html">&lt;p&gt;如何安装 pelican 博客，并发布在 GitHub Page 上。&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Pelican&lt;/h1&gt;
 &lt;p&gt;Pelican 是一种静态博客生成器。&lt;/p&gt;
+&lt;h2&gt;准备工作&lt;/h2&gt;
+&lt;p&gt;为了发布在 GitHub Page 上，需要先新建一个远程仓库 &lt;code&gt;username.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;将该仓库克隆到本地&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$git clone https://github.com/{username}/{username}.github.io.git blog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;由于 Pelican 默认发布 master 分支下的内容，所以，我们将 pelican 项目放到其他分支中。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$git checkout -b source&lt;/code&gt;&lt;/p&gt;
 &lt;h2&gt;安装&lt;/h2&gt;
 &lt;p&gt;新建 python 虚拟环境&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;python -m venv .venv&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="n"&gt;venv&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;
+
+&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="k"&gt;source&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;venv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;安装必要的 python 包。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$python -m pip install pelican markdown ghp-import&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;新建 pelican 项目&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;$pelican-quickstart&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;填写必要信息&lt;/p&gt;
 &lt;h2&gt;配置&lt;/h2&gt;</content><category term="Default"></category><category term="Blog"></category></entry></feed>
