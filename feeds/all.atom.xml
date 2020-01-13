@@ -21,7 +21,7 @@
 &lt;li&gt;&lt;a href="#52-%e9%83%a8%e7%bd%b2%e5%9c%a8-github-pages-%e4%b8%8a"&gt;5.2 部署在 GitHub Pages 上&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="#%e5%8f%82%e8%80%83"&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e5%8f%82%e8%80%83"&gt;6 参考&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;1 准备工作&lt;/h2&gt;
 &lt;p&gt;为了发布在 GitHub Page 上，需要先新建一个远程仓库 &lt;code&gt;username.github.io&lt;/code&gt;&lt;/p&gt;
@@ -190,15 +190,15 @@ pelican-themes --install themes/medius
 
 &lt;h2&gt;4 创建内容&lt;/h2&gt;
 &lt;p&gt;在 content 目录下，存放博客文章及各类资源。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;website/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;website&lt;/span&gt;
 &lt;span class="err"&gt;├── content&lt;/span&gt;
-&lt;span class="err"&gt;│   ├── category/&lt;/span&gt;
-&lt;span class="err"&gt;│   │    └── article1.rst&lt;/span&gt;
+&lt;span class="err"&gt;│   ├── category&lt;/span&gt;
+&lt;span class="err"&gt;│   │   └── article1.rst&lt;/span&gt;
 &lt;span class="err"&gt;│   ├── article2.md&lt;/span&gt;
 &lt;span class="err"&gt;│   ├── pages&lt;/span&gt;
-&lt;span class="err"&gt;│   │    └── about.md&lt;/span&gt;
+&lt;span class="err"&gt;│   │   └── about.md&lt;/span&gt;
 &lt;span class="err"&gt;│   └── images&lt;/span&gt;
-&lt;span class="err"&gt;│        └── author.png&lt;/span&gt;
+&lt;span class="err"&gt;│       └── author.png&lt;/span&gt;
 &lt;span class="err"&gt;└── pelicanconf.py&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -236,6 +236,6 @@ make github
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2&gt;参考&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://a-slide.github.io/blog/github-pelican"&gt;Create a github hosted Pelican blog with a Bootstrap3 theme&lt;/a&gt;
-&lt;a href="https://snipcart.com/blog/pelican-blog-tutorial-search-comments"&gt;A Pelican Tutorial: Static, Python-Powered Blog with Search &amp;amp; Comments&lt;/a&gt;&lt;/p&gt;</content><category term="Default"></category><category term="Blog"></category></entry></feed>
+&lt;h2&gt;6 参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://a-slide.github.io/blog/github-pelican"&gt;Create a github hosted Pelican blog with a Bootstrap3 theme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://snipcart.com/blog/pelican-blog-tutorial-search-comments"&gt;A Pelican Tutorial: Static, Python-Powered Blog with Search &amp;amp; Comments&lt;/a&gt;&lt;/p&gt;</content><category term="Default"></category><category term="Blog"></category></entry></feed>
