@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Pelican for GitHub Pages
         env:
           GIT_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           GH_PAGES_BRANCH: master
+          PELICAN_CONFIG_FILE: pelicanconf.py
         uses: nelsonjchen/gh-pages-pelican-action@0.1.4
