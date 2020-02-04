@@ -195,4 +195,5 @@ make github
 
 1. [Create a github hosted Pelican blog with a Bootstrap3 theme](https://a-slide.github.io/blog/github-pelican)
 2. [A Pelican Tutorial: Static, Python-Powered Blog with Search & Comments](https://snipcart.com/blog/pelican-blog-tutorial-search-comments)
+3. [something]()
 
