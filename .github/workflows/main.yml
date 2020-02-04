@@ -17,5 +17,5 @@ jobs:
         env:
           GIT_DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           GH_PAGES_BRANCH: master
-          PELICAN_CONFIG_FILE: pelicanconf.py
+          PELICAN_CONFIG_FILE: ./pelicanconf.py
         uses: nelsonjchen/gh-pages-pelican-action@0.1.4
