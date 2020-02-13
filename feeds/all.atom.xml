@@ -45,13 +45,12 @@
 
 &lt;p&gt;caddy 的更多配置方法见 &lt;a href="https://github.com/lucaslorentz/caddy-docker-proxy"&gt;GitHub&lt;/a&gt; 仓库&lt;/p&gt;
 &lt;p&gt;在 docker 网络中生成如下 Caddyfile 配置&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;example.com {&lt;/span&gt;
-&lt;span class="err"&gt;  proxy / 172.17.0.7:8080 {&lt;/span&gt;
-&lt;span class="err"&gt;    transparent&lt;/span&gt;
-&lt;span class="err"&gt;  }&lt;/span&gt;
-&lt;span class="err"&gt;  tls example@mail.com&lt;/span&gt;
-&lt;span class="err"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Default"></category><category term="docker"></category><category term="caddy"></category></entry><entry><title>安装及配置 Pelican 博客</title><link href="https://tengshan2008.github.io/an-zhuang-ji-pei-zhi-pelican-bo-ke.html" rel="alternate"></link><published>2020-01-02T00:00:00+08:00</published><updated>2020-01-02T00:00:00+08:00</updated><author><name>Master</name></author><id>tag:tengshan2008.github.io,2020-01-02:/an-zhuang-ji-pei-zhi-pelican-bo-ke.html</id><summary type="html">&lt;p&gt;如何安装 pelican 博客，并发布在 GitHub Page 上。&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Pelican&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;example.com {
+  proxy / 172.17.0.7:8080 {
+    transparent
+  }
+  tls example@mail.com
+}&lt;/code&gt;&lt;/p&gt;</content><category term="Default"></category><category term="docker"></category><category term="caddy"></category></entry><entry><title>安装及配置 Pelican 博客</title><link href="https://tengshan2008.github.io/an-zhuang-ji-pei-zhi-pelican-bo-ke.html" rel="alternate"></link><published>2020-01-02T00:00:00+08:00</published><updated>2020-01-02T00:00:00+08:00</updated><author><name>Master</name></author><id>tag:tengshan2008.github.io,2020-01-02:/an-zhuang-ji-pei-zhi-pelican-bo-ke.html</id><summary type="html">&lt;p&gt;如何安装 pelican 博客，并发布在 GitHub Page 上。&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Pelican&lt;/h1&gt;
 &lt;p&gt;Pelican 是一种静态博客生成器，包含大量丰富的主题，拥有简单的部署方法。&lt;/p&gt;
 &lt;h2&gt;1. 准备工作&lt;/h2&gt;
 &lt;p&gt;为了发布在 GitHub Page 上，需要先新建一个远程仓库 username.github.io 并将该仓库克隆到本地。&lt;/p&gt;
@@ -219,19 +218,16 @@ pelican-themes --install themes/medius
 
 &lt;h2&gt;4. 创建内容&lt;/h2&gt;
 &lt;p&gt;在 content 目录下，存放博客文章及各类资源。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;website&lt;/span&gt;
-&lt;span class="err"&gt;├── content&lt;/span&gt;
-&lt;span class="err"&gt;│   ├── category&lt;/span&gt;
-&lt;span class="err"&gt;│   │   └── article1.rst&lt;/span&gt;
-&lt;span class="err"&gt;│   ├── article2.md&lt;/span&gt;
-&lt;span class="err"&gt;│   ├── pages&lt;/span&gt;
-&lt;span class="err"&gt;│   │   └── about.md&lt;/span&gt;
-&lt;span class="err"&gt;│   └── images&lt;/span&gt;
-&lt;span class="err"&gt;│       └── author.png&lt;/span&gt;
-&lt;span class="err"&gt;└── pelicanconf.py&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
+&lt;p&gt;&lt;code&gt;website
+├── content
+│   ├── category
+│   │   └── article1.rst
+│   ├── article2.md
+│   ├── pages
+│   │   └── about.md
+│   └── images
+│       └── author.png
+└── pelicanconf.py&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;若有静态资源目录，须在配置文件中定义。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim pelicanconf.py
 &lt;/pre&gt;&lt;/div&gt;
@@ -268,5 +264,4 @@ make github
 &lt;ol&gt;
 &lt;li&gt;&lt;a href="https://a-slide.github.io/blog/github-pelican"&gt;Create a github hosted Pelican blog with a Bootstrap3 theme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://snipcart.com/blog/pelican-blog-tutorial-search-comments"&gt;A Pelican Tutorial: Static, Python-Powered Blog with Search &amp;amp; Comments&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=""&gt;something&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><category term="Default"></category><category term="pelican"></category><category term="blog"></category></entry></feed>

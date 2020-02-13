@@ -98,13 +98,12 @@
 
 <p>caddy 的更多配置方法见 <a href="https://github.com/lucaslorentz/caddy-docker-proxy">GitHub</a> 仓库</p>
 <p>在 docker 网络中生成如下 Caddyfile 配置</p>
-<div class="highlight"><pre><span></span><span class="err">example.com {</span>
-<span class="err">  proxy / 172.17.0.7:8080 {</span>
-<span class="err">    transparent</span>
-<span class="err">  }</span>
-<span class="err">  tls example@mail.com</span>
-<span class="err">}</span>
-</pre></div>
+<p><code>example.com {
+  proxy / 172.17.0.7:8080 {
+    transparent
+  }
+  tls example@mail.com
+}</code></p>
     </div>
 
     <footer>
